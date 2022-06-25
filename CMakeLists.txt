@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+project(TEST)
+set(CMAKE_CXX_STANDARD 20)
+aux_source_directory(src SRC_SUB)
+aux_source_directory(. SRC_CUR)
+add_executable(a ${SRC_SUB} ${SRC_CUR})
+include_directories(include)
